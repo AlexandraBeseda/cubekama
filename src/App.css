@@ -1,4 +1,4 @@
-.app-wrapper{
+.app-wrapper {
     margin: 0 auto;
     display: grid;
     width: 1200px;
@@ -8,7 +8,7 @@
 
     grid-template-areas:
           "h h"
-          "n c";/*это псевдоним!*/
+          "n c"; /*это псевдоним!*/
 
     grid-template-rows: 60px 1fr;
     /*2 строки:
@@ -20,4 +20,14 @@
     2ая колонка- 10 фракций*/
     /*grid-gap: 10px;
     это расстояние между элементами, пока что не используем*/
+
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+
+}
+
+.app-wrapper-content {
+    grid-area: c;
+    background-color: #ff923333;
+    border-radius: 10px;
 }
